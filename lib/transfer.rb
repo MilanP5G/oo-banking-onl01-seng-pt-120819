@@ -42,7 +42,7 @@ class Transfer
   end 
   
   def reverse_transfer
-    execute_transaction
+   execute_transaction
     if execute_transaction = "rejected"
       sender.balance += amount
       receiver.balance -= amount 
